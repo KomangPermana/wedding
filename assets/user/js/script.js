@@ -1,25 +1,3 @@
-/*
-  * @package Bizcraft
-  * @subpackage Bizcraft HTML
-  * 
-  * Template Scripts
-  * Created by Tripples
-  
-   1.    Style Switcher
-   2.    Navigation
-   3.    Fixed Header
-   4.    Main Slideshow (Carousel)
-   5.    Counter
-   6.    Owl Carousel
-   7.    Flex Slider
-   8.    Wow Animation
-   10.   Video Background
-   11.   Back To Top
-
-  
-*/
-
-
 jQuery(function ($) {
   'use strict';
 
