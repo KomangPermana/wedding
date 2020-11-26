@@ -87,6 +87,39 @@ var responsiveChartSales = [
 
 Chartist.Bar('#salesChart', dataSales, optionChartSales, responsiveChartSales);
 
+// salesChart
+var dataSales1 = {
+	labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+	series: [
+	[5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+	[3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+	]
+}
+
+var optionChartSales1 = {
+	plugins: [
+	Chartist.plugins.tooltip()
+	],
+	seriesBarDistance: 10,
+	axisX: {
+		showGrid: false
+	},
+	height: "245px",
+}
+
+var responsiveChartSales1 = [
+['screen and (max-width: 640px)', {
+	seriesBarDistance: 5,
+	axisX: {
+		labelInterpolationFnc: function (value) {
+			return value[0];
+		}
+	}
+}]
+];
+
+Chartist.Bar('#salesChart1', dataSales1, optionChartSales1, responsiveChartSales1);
+
 $(".mapcontainer").mapael({
 	map : {
 		name : "world_countries",
