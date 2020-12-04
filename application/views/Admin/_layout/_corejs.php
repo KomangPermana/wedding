@@ -12,3 +12,5 @@
 <script src="<?=base_url()?>assets/admin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="<?=base_url()?>assets/admin/js/ready.min.js"></script>
 <script src="<?=base_url()?>assets/admin/js/demo.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
