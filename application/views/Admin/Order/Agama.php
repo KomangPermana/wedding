@@ -7,31 +7,31 @@
                 <tr>
                     <td>Agama Couple 1</td>
                     <td id="eAgamaCouple1">
-                        <input type="text" id="aCouple1" name="aCouple1" class="form-control">
+                        <input type="text" id="aCouple1" name="aCouple1" class="form-control" value="Bismillahirrahmanirrahim">
                     </td>
                 </tr>
                 <tr>
                     <td>Agama Couple 2</td>
                     <td id="eAgamaCouple2">
-                        <input type="text" id="aCouple2" name="aCouple2" class="form-control">
+                        <input type="text" id="aCouple2" name="aCouple2" class="form-control" value="Assalamu`alaikum Warahmatullahi Wabarakatuh">
                     </td>
                 </tr>
                 <tr>
                     <td>Agama Couple 3</td>
                     <td id="eAgamaCouple3">
-                        <input type="text" id="aCouple3" name="aCouple3" class="form-control">
+                        <textarea id="aCouple3" name="aCouple3" class="form-control">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan putra-putri kami.</textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>Agama quote 1</td>
                     <td id="eAgamaQuote1">
-                        <input type="text" id="aQuote1" name="aQuote1" class="form-control">
+                        <textarea id="aQuote1" name="aQuote1" class="form-control">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.</textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>Agama quote 2</td>
                     <td id="eAgamaQuote2">
-                        <input type="text" id="aQuote2" name="aQuote2" class="form-control">
+                        <input type="text" id="aQuote2" name="aQuote2" class="form-control" value="QS. Ar-Rum: 21">
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +43,7 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
+<div id="fBatalAgama" class="fBatalAgama col-md-12">
 <table class="table table-striped table-hover">
     <tbody>
         <tr>

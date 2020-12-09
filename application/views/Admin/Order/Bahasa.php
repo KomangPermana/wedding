@@ -81,7 +81,7 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
+<div id="fBatalBahasa" class="fBatalBahasa col-md-12">
     <table class="table table-striped table-hover">
         <tbody>
             <tr>

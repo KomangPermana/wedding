@@ -73,7 +73,7 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
+<div id="fBatalHome" class="fBatalHome col-md-12">
 <table class="table table-striped table-hover">
     <tbody>
         <tr>

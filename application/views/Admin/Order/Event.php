@@ -45,43 +45,43 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
-<table class="table table-striped table-hover">
-    <tbody>
-        <tr>
-            <td>Judul event</td>
-            <td>Event</td>
-        </tr>
-        <tr>
-            <td>Pembuka</td>
-            <td>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara(i) untuk menghadiri Resepsi Pernikahan putra-putri kami</td>
-        </tr>
-        <tr>
-            <td>Coundown</td>
-            <td>december 20,2020 10:00:00</td>
-        </tr>
-        <tr>
-            <td>Note 1</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Note 2</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Penutup</td>
-            <td>Merupakan suatu kehormatan dan kebahagiaan#bagi kami apabila Bapak/Ibu/Saudara(i)#berkenan untuk hadir dan memberikan do'a restu#kepada kedua mempelai.</td>
-        </tr>
-        <tr>
-            <td>Link Sound</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Judul Live</td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<div id="fBatalEvent" class="fBatalEvent col-md-12">
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>Judul event</td>
+                <td>Event</td>
+            </tr>
+            <tr>
+                <td>Pembuka</td>
+                <td>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara(i) untuk menghadiri Resepsi Pernikahan putra-putri kami</td>
+            </tr>
+            <tr>
+                <td>Coundown</td>
+                <td>december 20,2020 10:00:00</td>
+            </tr>
+            <tr>
+                <td>Note 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Note 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Penutup</td>
+                <td>Merupakan suatu kehormatan dan kebahagiaan#bagi kami apabila Bapak/Ibu/Saudara(i)#berkenan untuk hadir dan memberikan do'a restu#kepada kedua mempelai.</td>
+            </tr>
+            <tr>
+                <td>Link Sound</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Judul Live</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div class="col-md-12">&nbsp;</div>
 <div class="col-md-6"><h3>Tanggal dan alamat Akad</h3></div>
@@ -119,31 +119,31 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
-<table class="table table-striped table-hover">
-    <tbody>
-        <tr>
-            <td>Titel</td>
-            <td>Akad</td>
-        </tr>
-        <tr>
-            <td>Tanggal</td>
-            <td>Minggu, 20 Desember 2020</td>
-        </tr>
-        <tr>
-            <td>Jam</td>
-            <td>december 20,2020 10:00:00</td>
-        </tr>
-        <tr>
-            <td>Keterangan Waktu</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td>Perumnas Talang Kelapa Blok. IV RT. 22 RW. 07 No. 287 Kel/Kec Alang-alang Lebar KM. 10#Kota Palembang></td>
-        </tr>
-    </tbody>
-</table>
+<div id="fBatalAkad" class="fBatalAkad col-md-12">
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>Titel</td>
+                <td>Akad</td>
+            </tr>
+            <tr>
+                <td>Tanggal</td>
+                <td>Minggu, 20 Desember 2020</td>
+            </tr>
+            <tr>
+                <td>Jam</td>
+                <td>december 20,2020 10:00:00</td>
+            </tr>
+            <tr>
+                <td>Keterangan Waktu</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Perumnas Talang Kelapa Blok. IV RT. 22 RW. 07 No. 287 Kel/Kec Alang-alang Lebar KM. 10#Kota Palembang></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div class="col-md-12">&nbsp;</div>
 <div class="col-md-6"><h3>Tanggal dan alamat Resepsi</h3></div>
@@ -181,31 +181,31 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
-<table class="table table-striped table-hover">
-    <tbody>
-        <tr>
-            <td>Titel</td>
-            <td>Resepsi</td>
-        </tr>
-        <tr>
-            <td>Tanggal</td>
-            <td>Minggu, 20 Desember 2020</td>
-        </tr>
-        <tr>
-            <td>Jam</td>
-            <td>december 20,2020 10:00:00</td>
-        </tr>
-        <tr>
-            <td>Keterangan Waktu</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td>Perumnas Talang Kelapa Blok. IV RT. 22 RW. 07 No. 287 Kel/Kec Alang-alang Lebar KM. 10#Kota Palembang></td>
-        </tr>
-    </tbody>
-</table>
+<div id="fBatalResepsi" class="fBatalResepsi col-md-12">
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>Titel</td>
+                <td>Resepsi</td>
+            </tr>
+            <tr>
+                <td>Tanggal</td>
+                <td>Minggu, 20 Desember 2020</td>
+            </tr>
+            <tr>
+                <td>Jam</td>
+                <td>december 20,2020 10:00:00</td>
+            </tr>
+            <tr>
+                <td>Keterangan Waktu</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Perumnas Talang Kelapa Blok. IV RT. 22 RW. 07 No. 287 Kel/Kec Alang-alang Lebar KM. 10#Kota Palembang></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div class="col-md-12">&nbsp;</div>
 <div class="col-md-6"><h3>Map</h3></div>
@@ -235,23 +235,23 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
-<table class="table table-striped table-hover">
-    <tbody>
-        <tr>
-            <td>Link ifreme</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Link Map</td>
-            <td>https://goo.gl/maps/8YeKETv5NC4Pzq4s9</td>
-        </tr>
-        <tr>
-            <td>Tombol Map</td>
-            <td>Open Map</td>
-        </tr>
-    </tbody>
-</table>
+<div id="fBatalMap" class="fBatalMap col-md-12">
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>Link ifreme</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Link Map</td>
+                <td>https://goo.gl/maps/8YeKETv5NC4Pzq4s9</td>
+            </tr>
+            <tr>
+                <td>Tombol Map</td>
+                <td>Open Map</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div class="col-md-12">&nbsp;</div>
 <div class="col-md-12"><h3>Tambah Acara</h3></div>

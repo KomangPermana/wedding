@@ -21,19 +21,19 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
-<table class="table table-striped table-hover">
-    <tbody>
-        <tr>
-            <td>Judul Galeri</td>
-            <td>Gallery</td>
-        </tr>
-        <tr>
-            <td>Text Galeri</td>
-            <td>Momen Bahagia</td>
-        </tr>
-    </tbody>
-</table>
+<div id="fBatalGaleri" class="fBatalGaleri col-md-12">
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>Judul Galeri</td>
+                <td>Gallery</td>
+            </tr>
+            <tr>
+                <td>Text Galeri</td>
+                <td>Momen Bahagia</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div class="col-md-12">&nbsp;</div>
 <div class="col-md-6">

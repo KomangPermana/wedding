@@ -17,7 +17,7 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
+<div id="fBatalQuote" class="fBatalQuote col-md-12">
     <table class="table table-striped table-hover">
         <tbody>
             <tr>
@@ -55,7 +55,7 @@
         </table>
     </form>
 </div>
-<div class="col-md-12">
+<div id="fBatalStory" class="fBatalStory col-md-12">
     <table class="table table-striped table-hover">
         <tbody>
             <tr>
