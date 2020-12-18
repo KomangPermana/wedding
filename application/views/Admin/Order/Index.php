@@ -213,17 +213,6 @@
 </div>
 
 <script>
-/* $(document).ready(function(){
-    var inputs = document.getElementsByTagName("input"); 
-    for (var i = 0; i < inputs.length; i++) { 
-        inputs[i].disabled = 'true';
-    }
-    var textareas = document.getElementsByTagName("textarea"); 
-    for (var i = 0; i < textareas.length; i++) { 
-        textareas[i].disabled = 'true';
-    }
-}); */
-
 function editForm(formTab){
     var x = document.getElementById("fEdit"+formTab);
     var y = document.getElementById("fBatal"+formTab);
@@ -239,23 +228,4 @@ function editForm(formTab){
         y.style.display = 'block';
     }
 }
-
-/* function Formedit(formTab,bDisabled){
-    if (bDisabled == "true"){
-        document.getElementById("bEdit"+formTab).style.display = 'block';
-        document.getElementById("bBatal"+formTab).style.display = 'none';
-    } else {
-        document.getElementById("bEdit"+formTab).style.display = 'none';
-        document.getElementById("bBatal"+formTab).style.display = 'block';
-    }
-
-    var inputs = document.getElementsByTagName("input"); 
-    for (var i = 0; i < inputs.length; i++) { 
-        inputs[i].disabled = bDisabled;
-    }
-    var textareas = document.getElementsByTagName("textarea"); 
-    for (var i = 0; i < textareas.length; i++) { 
-        textareas[i].disabled = bDisabled;
-    }
-} */
 </script>

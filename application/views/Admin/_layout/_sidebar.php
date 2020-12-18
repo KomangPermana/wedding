@@ -48,6 +48,12 @@
                     <p>Form Order</p>
                 </a>
             </li>
+            <li class="nav-item <?php if($getView == 'LandingPage'){ echo 'active';} ?>">
+                <a href="<?= base_url('Admin/LandingPage/'); ?>">
+                    <i class="la la-diamond"></i>
+                    <p>Landing Page</p>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
