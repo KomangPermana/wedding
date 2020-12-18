@@ -1,37 +1,37 @@
 <div class="col-md-6"><h3>Agama</h3></div>
 <div class="col-md-6"><button class="bEditAgama btn btn-primary pull-right" id="bEditAgama" onclick="editForm('Agama');">Edit Agama</button></div>
 <div id="fEditAgama" class="fEditAgama col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertAgama/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
                     <td>Agama Couple 1</td>
-                    <td id="eAgamaCouple1">
-                        <input type="text" id="aCouple1" name="aCouple1" class="form-control" value="Bismillahirrahmanirrahim">
+                    <td>
+                        <input type="text" id="aCouple1" name="agama[]" class="form-control" value="<?= $Agama->Couple1 ?>">
                     </td>
                 </tr>
                 <tr>
                     <td>Agama Couple 2</td>
-                    <td id="eAgamaCouple2">
-                        <input type="text" id="aCouple2" name="aCouple2" class="form-control" value="Assalamu`alaikum Warahmatullahi Wabarakatuh">
+                    <td>
+                        <input type="text" id="aCouple2" name="agama[]" class="form-control" value="<?= $Agama->Couple2 ?>">
                     </td>
                 </tr>
                 <tr>
                     <td>Agama Couple 3</td>
-                    <td id="eAgamaCouple3">
-                        <textarea id="aCouple3" name="aCouple3" class="form-control">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan putra-putri kami.</textarea>
+                    <td>
+                        <textarea id="aCouple3" name="agama[]" class="form-control"><?= $Agama->Couple3 ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>Agama quote 1</td>
-                    <td id="eAgamaQuote1">
-                        <textarea id="aQuote1" name="aQuote1" class="form-control">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.</textarea>
+                    <td>
+                        <textarea id="aQuote1" name="agama[]" class="form-control"><?= $Agama->Quote1 ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>Agama quote 2</td>
-                    <td id="eAgamaQuote2">
-                        <input type="text" id="aQuote2" name="aQuote2" class="form-control" value="QS. Ar-Rum: 21">
+                    <td>
+                        <input type="text" id="aQuote2" name="agama[]" class="form-control" value="<?= $Agama->Quote2 ?>">
                     </td>
                 </tr>
                 <tr>
@@ -48,29 +48,23 @@
     <tbody>
         <tr>
             <td>Agama Couple 1</td>
-            <td id="agamaCouple1">Bismillahirrahmanirrahim</td>
+            <td><?= $Agama->Couple1 ?></td>
         </tr>
         <tr>
             <td>Agama Couple 2</td>
-            <td id="agamaCouple2">Assalamu`alaikum Warahmatullahi Wabarakatuh</td>
+            <td><?= $Agama->Couple2 ?></td>
         </tr>
         <tr>
             <td>Agama Couple 3</td>
-            <td id="agamaCouple3">
-                Maha Suci Allah<br>
-                yang telah menciptakan makhluk-Nya<br>
-                berpasang-pasangan.<br>
-                Ya Allah semoga ridho-Mu tercurah<br>
-                mengiringi pernikahan putra-putri kami
-            </td>
+            <td><?= $Agama->Couple3 ?></td>
         </tr>
         <tr>
             <td>Agama quote 1</td>
-            <td id="agamaQuote1">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.</td>
+            <td><?= $Agama->Quote1 ?></td>
         </tr>
         <tr>
             <td>Agama quote 2</td>
-            <td id="agamaQuote2">QS. Ar-Rum: 21</td>
+            <td><?= $Agama->Quote2 ?></td>
         </tr>
     </tbody>
 </table>

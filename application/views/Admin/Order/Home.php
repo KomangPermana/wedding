@@ -7,61 +7,61 @@
                 <tr>
                     <td>Foto Ogthumbnail</td>
                     <td>
-                        <input type="file" id="fOgthumbnail" name="fOgthumbnail" class="form-control">
+                        <input type="file" id="fOgthumbnail" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Foto Favicon</td>
                     <td>
-                        <input type="file" id="fFavicon" name="fFavicon" class="form-control">
+                        <input type="file" id="fFavicon" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Foto Openerimg</td>
                     <td>
-                        <input type="file" id="fOpenerimg" name="fOpenerimg" class="form-control">
+                        <input type="file" id="fOpenerimg" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Judul home</td>
                     <td>
-                        <input type="text" id="jHome" name="jHome" class="form-control">
+                        <input type="text" id="jHome" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Official</td>
                     <td>
-                        <input type="text" id="Official" name="Official" class="form-control">
+                        <input type="text" id="Official" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Nama panggilan 1</td>
                     <td>
-                        <input type="text" id="panggilan1" name="panggilan1" class="form-control">
+                        <input type="text" id="panggilan1" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Nama panggilan 2</td>
                     <td>
-                        <input type="text" id="panggilan2" name="panggilan2" class="form-control">
+                        <input type="text" id="panggilan2" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Link tombol home</td>
                     <td>
-                        <input type="text" id="linkHome" name="linkHome" class="form-control">
+                        <input type="text" id="linkHome" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Tanggal home</td>
                     <td>
-                        <input type="date" id="tanggalHome" name="tanggalHome" class="form-control">
+                        <input type="date" id="tanggalHome" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Alamat home</td>
                     <td>
-                        <textarea class="form-control" name="alamatHome" id="alamatHome"></textarea>
+                        <textarea class="form-control" name="home[]" id="alamatHome"></textarea>
                     </td>
                 </tr>
                 <tr>
