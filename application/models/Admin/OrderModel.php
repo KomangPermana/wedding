@@ -380,4 +380,201 @@ class OrderModel extends CI_Model
         }
     }
     //////// End Map ////////////////////////
+
+    //////// Gallery ////////////////////////
+    function getGallery($id){
+        $data = getDataByIdPengantin('data_gallery',$id);
+        if (empty($data)){
+            $data = array(
+                'Judul'         => null,
+                'TextGaleri'    => null
+            );
+            $data = (object)$data;
+        }
+        return $data;
+    }
+
+    function insertGallery(){
+        $id = $this->uri->segment('4');
+        $dataInput = $this->input->post('gallery');
+
+        $DataGallery = getDataByIdPengantin('data_gallery',$id);;
+        if (empty($DataGallery)){
+            $Data = array(
+                'IdPengantin'   => $id,
+                'DateCreated'   => datetime('datetime'),
+                'Judul'         => $dataInput[0],
+                'TextGaleri'    => $dataInput[1]
+            );
+            $this->db->insert('data_gallery',$Data);
+        } else {
+            $Data = array(
+                'LastUpdate'    => datetime('datetime'),
+                'Judul'         => $dataInput[0],
+                'TextGaleri'    => $dataInput[1]
+            );
+            $this->db->where('IdPengantin', $id);
+            $this->db->update('data_gallery', $Data);
+        }
+    }
+    //////// End Gallery ////////////////////////
+
+    //////// Quote ////////////////////////
+    function getQuote($id){
+        $data = getDataByIdPengantin('data_quote',$id);
+        if (empty($data)){
+            $data = array(
+                'Judul'         => null
+            );
+            $data = (object)$data;
+        }
+        return $data;
+    }
+
+    function insertQuote(){
+        $id = $this->uri->segment('4');
+        $dataInput = $this->input->post('quote');
+
+        $DataQuote = getDataByIdPengantin('data_quote',$id);;
+        if (empty($DataQuote)){
+            $Data = array(
+                'IdPengantin'   => $id,
+                'DateCreated'   => datetime('datetime'),
+                'Judul'         => $dataInput[0]
+            );
+            $this->db->insert('data_quote',$Data);
+        } else {
+            $Data = array(
+                'LastUpdate'    => datetime('datetime'),
+                'Judul'         => $dataInput[0]
+            );
+            $this->db->where('IdPengantin', $id);
+            $this->db->update('data_quote', $Data);
+        }
+    }
+    //////// End Quote ////////////////////////
+
+    //////// Story ////////////////////////
+    function getStory($id){
+        $data = getDataByIdPengantin('data_story',$id);
+        if (empty($data)){
+            $data = array(
+                'Kecil'         => null,
+                'Keterangan'    => null,
+                'Story'         => null
+            );
+            $data = (object)$data;
+        }
+        return $data;
+    }
+
+    function insertStory(){
+        $id = $this->uri->segment('4');
+        $dataInput = $this->input->post('story');
+
+        $DataStory = getDataByIdPengantin('data_story',$id);;
+        if (empty($DataStory)){
+            $Data = array(
+                'IdPengantin'   => $id,
+                'DateCreated'   => datetime('datetime'),
+                'Kecil'         => $dataInput[0],
+                'Keterangan'    => $dataInput[1],
+                'Story'         => $dataInput[2]
+            );
+            $this->db->insert('data_story',$Data);
+        } else {
+            $Data = array(
+                'LastUpdate'    => datetime('datetime'),
+                'Kecil'         => $dataInput[0],
+                'Keterangan'    => $dataInput[1],
+                'Story'         => $dataInput[2]
+            );
+            $this->db->where('IdPengantin', $id);
+            $this->db->update('data_story', $Data);
+        }
+    }
+    //////// End Story ////////////////////////
+
+    //////// Bahasa ////////////////////////
+    function getBahasa($id){
+        $data = getDataByIdPengantin('data_bahasa',$id);
+        if (empty($data)){
+            $data = array(
+                'Popup1'        => null,
+                'Popup2'        => null,
+                'TombolPopup'   => null,
+                'Home1'         => null,
+                'Home2'         => null,
+                'Event1'        => null,
+                'Event2'        => null,
+                'Dan'           => null,
+                'KataPembuka'   => null,
+                'TagLine'       => null,
+                'UcapanSelamat' => null,
+                'Nama'          => null,
+                'IsiNama'       => null,
+                'Ucapan'        => null,
+                'IsiPesan'      => null,
+                'TombolKirim'   => null,
+                'MenuQuote'     => null
+            );
+            $data = (object)$data;
+        }
+        return $data;
+    }
+
+    function insertBahasa(){
+        $id = $this->uri->segment('4');
+        $dataInput = $this->input->post('bahasa');
+
+        $DataBahasa = getDataByIdPengantin('data_bahasa',$id);;
+        if (empty($DataBahasa)){
+            $Data = array(
+                'IdPengantin'   => $id,
+                'DateCreated'   => datetime('datetime'),
+                'Popup1'        => $dataInput[0],
+                'Popup2'        => $dataInput[1],
+                'TombolPopup'   => $dataInput[2],
+                'Home1'         => $dataInput[3],
+                'Home2'         => $dataInput[4],
+                'Event1'        => $dataInput[5],
+                'Event2'        => $dataInput[6],
+                'Dan'           => $dataInput[7],
+                'KataPembuka'   => $dataInput[8],
+                'TagLine'       => $dataInput[9],
+                'UcapanSelamat' => $dataInput[10],
+                'Nama'          => $dataInput[11],
+                'IsiNama'       => $dataInput[12],
+                'Ucapan'        => $dataInput[13],
+                'IsiPesan'      => $dataInput[14],
+                'TombolKirim'   => $dataInput[15],
+                'MenuQuote'     => $dataInput[16]
+            );
+            $this->db->insert('data_bahasa',$Data);
+        } else {
+            $Data = array(
+                'LastUpdate'    => datetime('datetime'),
+                'Popup1'        => $dataInput[0],
+                'Popup2'        => $dataInput[1],
+                'TombolPopup'   => $dataInput[2],
+                'Home1'         => $dataInput[3],
+                'Home2'         => $dataInput[4],
+                'Event1'        => $dataInput[5],
+                'Event2'        => $dataInput[6],
+                'Dan'           => $dataInput[7],
+                'KataPembuka'   => $dataInput[8],
+                'TagLine'       => $dataInput[9],
+                'UcapanSelamat' => $dataInput[10],
+                'Nama'          => $dataInput[11],
+                'IsiNama'       => $dataInput[12],
+                'Ucapan'        => $dataInput[13],
+                'IsiPesan'      => $dataInput[14],
+                'TombolKirim'   => $dataInput[15],
+                'MenuQuote'     => $dataInput[16]
+            );
+            $this->db->where('IdPengantin', $id);
+            $this->db->update('data_bahasa', $Data);
+        }
+    }
+    //////// End Bahasa ////////////////////////
 }

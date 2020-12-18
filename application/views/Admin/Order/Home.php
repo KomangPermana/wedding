@@ -7,61 +7,61 @@
                 <tr>
                     <td>Foto Ogthumbnail</td>
                     <td>
-                        <input type="file" id="fOgthumbnail" name="home[]" class="form-control">
+                        <input type="file" value="<?= $Home->Foto_Ogthumbnail ?>" id="fOgthumbnail" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Foto Favicon</td>
                     <td>
-                        <input type="file" id="fFavicon" name="home[]" class="form-control">
+                        <input type="file" value="<?= $Home->Foto_Favicon ?>" id="fFavicon" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Foto Openerimg</td>
                     <td>
-                        <input type="file" id="fOpenerimg" name="home[]" class="form-control">
+                        <input type="file" value="<?= $Home->Foto_Openerimg ?>" id="fOpenerimg" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Judul home</td>
                     <td>
-                        <input type="text" id="jHome" name="home[]" class="form-control">
+                        <input type="text" value="<?= $Home->Judul_Home ?>" id="jHome" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Official</td>
                     <td>
-                        <input type="text" id="Official" name="home[]" class="form-control">
+                        <input type="text" value="<?= $Home->Official ?>" id="Official" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Nama panggilan 1</td>
                     <td>
-                        <input type="text" id="panggilan1" name="home[]" class="form-control">
+                        <input type="text" value="<?= $Home->Nama_Panggilan_1 ?>" id="panggilan1" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Nama panggilan 2</td>
                     <td>
-                        <input type="text" id="panggilan2" name="home[]" class="form-control">
+                        <input type="text" value="<?= $Home->Nama_Panggilan_2 ?>" id="panggilan2" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Link tombol home</td>
                     <td>
-                        <input type="text" id="linkHome" name="home[]" class="form-control">
+                        <input type="text" value="<?= $Home->Link_Tombol_Home ?>" id="linkHome" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Tanggal home</td>
                     <td>
-                        <input type="date" id="tanggalHome" name="home[]" class="form-control">
+                        <input type="date" value="<?= $Home->Tanggal_Home ?>" id="tanggalHome" name="home[]" class="form-control">
                     </td>
                 </tr>
                 <tr>
                     <td>Alamat home</td>
                     <td>
-                        <textarea class="form-control" name="home[]" id="alamatHome"></textarea>
+                        <textarea class="form-control" name="home[]" id="alamatHome"><?= $Home->Alamat_Home ?></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -78,43 +78,43 @@
     <tbody>
         <tr>
             <td>Foto Ogthumbnail</td>
-            <td></td>
+            <td><?= $Home->Foto_Ogthumbnail ?></td>
         </tr>
         <tr>
             <td>Foto Favicon</td>
-            <td></td>
+            <td><?= $Home->Foto_Favicon ?></td>
         </tr>
         <tr>
             <td>Foto Openerimg</td>
-            <td></td>
+            <td><?= $Home->Foto_Openerimg ?></td>
         </tr>
         <tr>
             <td>Judul home</td>
-            <td></td>
+            <td><?= $Home->Judul_Home ?></td>
         </tr>
         <tr>
             <td>Official</td>
-            <td></td>
+            <td><?= $Home->Official ?></td>
         </tr>
         <tr>
             <td>Nama panggilan 1</td>
-            <td></td>
+            <td><?= $Home->Nama_Panggilan_1 ?></td>
         </tr>
         <tr>
             <td>Nama panggilan 2</td>
-            <td></td>
+            <td><?= $Home->Nama_Panggilan_2 ?></td>
         </tr>
         <tr>
             <td>Link tombol home</td>
-            <td>https://calendar.google.com/event?action=TEMPLATE&tmeid=N2NyODFkODNvZ25hdHQ0YnFra2F2bjcwOTMgYWRtaW4tbmlrYWhhbmthbWlAem1haWwubXkuaWQ&tmsrc=admin-nikahankami%40zmail.my.id</td>
+            <td><?= $Home->Link_Tombol_Home ?></td>
         </tr>
         <tr>
             <td>Tanggal home</td>
-            <td></td>
+            <td><?= $Home->Tanggal_Home ?></td>
         </tr>
         <tr>
             <td>Alamat home</td>
-            <td></td>
+            <td><?= $Home->Alamat_Home ?></td>
         </tr>
     </tbody>
 </table>

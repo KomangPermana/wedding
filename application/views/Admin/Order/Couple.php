@@ -6,43 +6,43 @@
             <tbody>
                 <tr>
                     <td>Foto mempelai 1</td>
-                    <td><input type="file" id="fmempelai1" name="fmempelai1" class="form-control"></td>
+                    <td><input type="file" value="<?= $Couple->Foto1 ?>" id="fmempelai1" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Nama mempelai 1</td>
-                    <td><input type="text" id="nMempelai1" name="nMempelai1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Nama1 ?>" id="nMempelai1" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Gelar mempelai 1</td>
-                    <td><input type="text" id="gMempelai1" name="gMempelai1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Gelar1 ?>" id="gMempelai1" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Status 1</td>
-                    <td><input type="text" id="sMempelai1" name="sMempelai1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Status1 ?>" id="sMempelai1" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Orang tua mempelai 1</td>
-                    <td><input type="text" id="otMempelai1" name="otMempelai1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Ortu1 ?>" id="otMempelai1" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Foto mempelai 2</td>
-                    <td><input type="file" id="fmempelai2" name="fmempelai2" class="form-control"></td>
+                    <td><input type="file" value="<?= $Couple->Foto2 ?>" id="fmempelai2" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Nama mempelai 2</td>
-                    <td><input type="text" id="nMempelai2" name="nMempelai2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Nama2 ?>" id="nMempelai2" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Gelar mempelai 2</td>
-                    <td><input type="text" id="gMempelai2" name="gMempelai2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Gelar2 ?>" id="gMempelai2" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Status 2</td>
-                    <td><input type="text" id="sMempelai2" name="sMempelai2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Status2 ?>" id="sMempelai2" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Orang tua mempelai 2</td>
-                    <td><input type="text" id="otMempelai2" name="otMempelai2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Couple->Ortu2 ?>" id="otMempelai2" name="couple[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -58,43 +58,43 @@
     <tbody>
         <tr>
             <td>Foto mempelai 1</td>
-            <td></td>
+            <td><?= $Couple->Foto1 ?></td>
         </tr>
         <tr>
             <td>Nama mempelai 1</td>
-            <td></td>
+            <td><?= $Couple->Nama1 ?></td>
         </tr>
         <tr>
             <td>Gelar mempelai 1</td>
-            <td></td>
+            <td><?= $Couple->Gelar1 ?></td>
         </tr>
         <tr>
             <td>Status 1</td>
-            <td></td>
+            <td><?= $Couple->Status1 ?></td>
         </tr>
         <tr>
             <td>Orang tua mempelai 1</td>
-            <td></td>
+            <td><?= $Couple->Ortu1 ?></td>
         </tr>
         <tr>
             <td>Foto mempelai 2</td>
-            <td></td>
+            <td><?= $Couple->Foto2 ?></td>
         </tr>
         <tr>
             <td>Nama mempelai 2</td>
-            <td></td>
+            <td><?= $Couple->Nama2 ?></td>
         </tr>
         <tr>
             <td>Gelar mempelai 2</td>
-            <td></td>
+            <td><?= $Couple->Gelar2 ?></td>
         </tr>
         <tr>
             <td>Status 2</td>
-            <td></td>
+            <td><?= $Couple->Status2 ?></td>
         </tr>
         <tr>
             <td>Orang tua mempelai 2</td>
-            <td></td>
+            <td><?= $Couple->Ortu2 ?></td>
         </tr>
     </tbody>
 </table>

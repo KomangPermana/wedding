@@ -26,7 +26,16 @@ class Order extends CI_Controller
 		$id = $this->uri->segment('4');
 		$vars['Pasangan']    	= getDataByIdPengantin('master_pengantin',$id);
 		$vars['Agama']    		= $this->OrderModel->getAgama($id);
-		//$vars['Home']    		= $this->OrderModel->getHome($id);
+		$vars['Home']    		= $this->OrderModel->getHome($id);
+		$vars['Couple']    		= $this->OrderModel->getCouple($id);
+		$vars['Event']    		= $this->OrderModel->getEvent($id);
+		$vars['Akad']    		= $this->OrderModel->getAkad($id);
+		$vars['Resepsi']		= $this->OrderModel->getResepsi($id);
+		$vars['Map']    		= $this->OrderModel->getMap($id);
+		$vars['Gallery']    	= $this->OrderModel->getGallery($id);
+		$vars['Quote']	    	= $this->OrderModel->getQuote($id);
+		$vars['Story']	    	= $this->OrderModel->getStory($id);
+		$vars['Bahasa'] 	   	= $this->OrderModel->getBahasa($id);
         $vars['getView']    = "Order";
 		$vars['Title']		= "Form Edit";
 		$vars['View']		= "Admin/Order/Index";

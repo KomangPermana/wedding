@@ -6,11 +6,11 @@
             <tbody>
                 <tr>
                     <td>Judul Galeri</td>
-                    <td><input type="text" id="jGaleri" name="jGaleri" class="form-control"></td>
+                    <td><input type="text" value="<?= $Gallery->Judul ?>" id="jGaleri" name="gallery[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Text Galeri</td>
-                    <td><input type="text" id="tGaleri" name="tGaleri" class="form-control"></td>
+                    <td><input type="text" value="<?= $Gallery->TextGaleri ?>" id="tGaleri" name="gallery[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -26,11 +26,11 @@
         <tbody>
             <tr>
                 <td>Judul Galeri</td>
-                <td>Gallery</td>
+                <td><?= $Gallery->Judul ?></td>
             </tr>
             <tr>
                 <td>Text Galeri</td>
-                <td>Momen Bahagia</td>
+                <td><?= $Gallery->TextGaleri ?></td>
             </tr>
         </tbody>
     </table>

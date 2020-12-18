@@ -6,35 +6,35 @@
             <tbody>
                 <tr>
                     <td>Judul event</td>
-                    <td><input type="text" id="jEvent" name="jEvent" class="form-control"></td>
+                    <td><input type="text" value="<?= $Event->Judul ?>" id="jEvent" name="event[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Pembuka</td>
-                    <td><textarea class="form-control" name="Pembuka" id="Pembuka"></textarea></td>
+                    <td><textarea class="form-control" name="event[]" id="Pembuka"><?= $Event->Pembuka ?></textarea></td>
                 </tr>
                 <tr>
                     <td>Coundown</td>
-                    <td><input type="text" id="Coundown" name="Coundown" class="form-control"></td>
+                    <td><input type="text" value="<?= $Event->Countdown ?>" id="Coundown" name="event[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Note 1</td>
-                    <td><input type="text" id="Note1" name="Note1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Event->Note1 ?>" id="Note1" name="event[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Note 2</td>
-                    <td><input type="text" id="Note2" name="Note2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Event->Note2 ?>" id="Note2" name="event[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Penutup</td>
-                    <td><textarea class="form-control" name="Penutup" id="Penutup"></textarea></td>
+                    <td><textarea class="form-control" name="event[]" id="Penutup"><?= $Event->Penutup ?></textarea></td>
                 </tr>
                 <tr>
                     <td>Link Sound</td>
-                    <td><input type="text" id="LinkSound" name="LinkSound" class="form-control"></td>
+                    <td><input type="text" value="<?= $Event->LinkSound ?>" id="LinkSound" name="event[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Judul Live</td>
-                    <td><input type="text" id="jLive" name="jLive" class="form-control"></td>
+                    <td><input type="text" value="<?= $Event->JudulLive ?>" id="jLive" name="event[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -50,35 +50,35 @@
         <tbody>
             <tr>
                 <td>Judul event</td>
-                <td>Event</td>
+                <td><?= $Event->Judul ?></td>
             </tr>
             <tr>
                 <td>Pembuka</td>
-                <td>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara(i) untuk menghadiri Resepsi Pernikahan putra-putri kami</td>
+                <td><?= $Event->Pembuka ?></td>
             </tr>
             <tr>
-                <td>Coundown</td>
-                <td>december 20,2020 10:00:00</td>
+                <td>Countdown</td>
+                <td><?= $Event->Countdown ?></td>
             </tr>
             <tr>
                 <td>Note 1</td>
-                <td></td>
+                <td><?= $Event->Note1 ?></td>
             </tr>
             <tr>
                 <td>Note 2</td>
-                <td></td>
+                <td><?= $Event->Note2 ?></td>
             </tr>
             <tr>
                 <td>Penutup</td>
-                <td>Merupakan suatu kehormatan dan kebahagiaan#bagi kami apabila Bapak/Ibu/Saudara(i)#berkenan untuk hadir dan memberikan do'a restu#kepada kedua mempelai.</td>
+                <td><?= $Event->Penutup ?></td>
             </tr>
             <tr>
                 <td>Link Sound</td>
-                <td></td>
+                <td><?= $Event->LinkSound ?></td>
             </tr>
             <tr>
                 <td>Judul Live</td>
-                <td></td>
+                <td><?= $Event->JudulLive ?></td>
             </tr>
         </tbody>
     </table>
@@ -92,23 +92,23 @@
             <tbody>
                 <tr>
                     <td>Titel</td>
-                    <td><input type="text" id="Titel" name="Titel" class="form-control"></td>
+                    <td><input type="text" value="<?= $Akad->Title ?>" id="Titel" name="akad[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tanggal</td>
-                    <td><input type="date" id="tanggalAkad" name="tanggalAkad" class="form-control"></td>
+                    <td><input type="date" value="<?= $Akad->Tanggal ?>" id="tanggalAkad" name="akad[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Jam</td>
-                    <td><input type="time" id="jamAkad" name="jamAkad" class="form-control"></td>
+                    <td><input type="time" value="<?= $Akad->Jam ?>" id="jamAkad" name="akad[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Keterangan Waktu</td>
-                    <td><input type="text" id="keteranganWaktu" name="keteranganWaktu" class="form-control"></td>
+                    <td><input type="text" value="<?= $Akad->KeteranganWaktu ?>" id="keteranganWaktu" name="akad[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Alamat</td>
-                    <td><textarea class="form-control" name="alamatAkad" id="alamatAkad"></textarea></td>
+                    <td><textarea class="form-control" name="akad[]" id="alamatAkad"><?= $Akad->Alamat ?></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -124,23 +124,23 @@
         <tbody>
             <tr>
                 <td>Titel</td>
-                <td>Akad</td>
+                <td><?= $Akad->Title ?></td>
             </tr>
             <tr>
                 <td>Tanggal</td>
-                <td>Minggu, 20 Desember 2020</td>
+                <td><?= $Akad->Tanggal ?></td>
             </tr>
             <tr>
                 <td>Jam</td>
-                <td>december 20,2020 10:00:00</td>
+                <td><?= $Akad->Jam ?></td>
             </tr>
             <tr>
                 <td>Keterangan Waktu</td>
-                <td></td>
+                <td><?= $Akad->KeteranganWaktu ?></td>
             </tr>
             <tr>
                 <td>Alamat</td>
-                <td>Perumnas Talang Kelapa Blok. IV RT. 22 RW. 07 No. 287 Kel/Kec Alang-alang Lebar KM. 10#Kota Palembang></td>
+                <td><?= $Akad->Alamat ?></td>
             </tr>
         </tbody>
     </table>
@@ -154,23 +154,23 @@
             <tbody>
                 <tr>
                     <td>Titel</td>
-                    <td><input type="text" id="TitelResepsi" name="TitelResepsi" class="form-control"></td>
+                    <td><input type="text" value="<?= $Akad->Title ?>" id="TitelResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tanggal</td>
-                    <td><input type="date" id="tanggalResepsi" name="tanggalResepsi" class="form-control"></td>
+                    <td><input type="date" value="<?= $Akad->Tanggal ?>" id="tanggalResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Jam</td>
-                    <td><input type="time" id="jamResepsi" name="jamResepsi" class="form-control"></td>
+                    <td><input type="time" value="<?= $Akad->Jam ?>" id="jamResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Keterangan Waktu</td>
-                    <td><input type="text" id="keteranganWaktuResepsi" name="keteranganWaktuResepsi" class="form-control"></td>
+                    <td><input type="text" value="<?= $Akad->KeteranganWaktu ?>" id="keteranganWaktuResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Alamat</td>
-                    <td><textarea class="form-control" name="alamatResepsi" id="alamatResepsi"></textarea></td>
+                    <td><textarea class="form-control" name="resepsi[]" id="alamatResepsi"><?= $Akad->Alamat ?></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -186,23 +186,23 @@
         <tbody>
             <tr>
                 <td>Titel</td>
-                <td>Resepsi</td>
+                <td><?= $Akad->Title ?></td>
             </tr>
             <tr>
                 <td>Tanggal</td>
-                <td>Minggu, 20 Desember 2020</td>
+                <td><?= $Akad->Tanggal ?></td>
             </tr>
             <tr>
                 <td>Jam</td>
-                <td>december 20,2020 10:00:00</td>
+                <td><?= $Akad->Jam ?></td>
             </tr>
             <tr>
                 <td>Keterangan Waktu</td>
-                <td></td>
+                <td><?= $Akad->KeteranganWaktu ?></td>
             </tr>
             <tr>
                 <td>Alamat</td>
-                <td>Perumnas Talang Kelapa Blok. IV RT. 22 RW. 07 No. 287 Kel/Kec Alang-alang Lebar KM. 10#Kota Palembang></td>
+                <td><?= $Akad->Alamat ?></td>
             </tr>
         </tbody>
     </table>
@@ -216,15 +216,15 @@
             <tbody>
                 <tr>
                     <td>Link ifreme</td>
-                    <td><input type="text" id="linkIframe" name="linkIframe" class="form-control"></td>
+                    <td><input type="text" value="<?= $Map->LinkIframe ?>" id="linkIframe" name="map[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Link Map</td>
-                    <td><input type="text" id="linkMap" name="linkMap" class="form-control"></td>
+                    <td><input type="text" value="<?= $Map->LinkMap ?>" id="linkMap" name="map[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tombol Map</td>
-                    <td><input type="text" id="tombolMap" name="tombolMap" class="form-control"></td>
+                    <td><input type="text" value="<?= $Map->Tombol ?>" id="tombolMap" name="map[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -240,15 +240,15 @@
         <tbody>
             <tr>
                 <td>Link ifreme</td>
-                <td></td>
+                <td><?= $Map->LinkIframe ?></td>
             </tr>
             <tr>
                 <td>Link Map</td>
-                <td>https://goo.gl/maps/8YeKETv5NC4Pzq4s9</td>
+                <td><?= $Map->LinkMap ?></td>
             </tr>
             <tr>
                 <td>Tombol Map</td>
-                <td>Open Map</td>
+                <td><?= $Map->Tombol ?></td>
             </tr>
         </tbody>
     </table>

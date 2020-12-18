@@ -6,71 +6,71 @@
             <tbody>
                 <tr>
                     <td>Popup 1</td>
-                    <td><input type="text" id="popup1" name="popup1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Popup1 ?>" id="popup1" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Popup 2</td>
-                    <td><input type="text" id="popup2" name="popup2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Popup2 ?>" id="popup2" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tombol pop up </td>
-                    <td><input type="text" id="tombolPopup" name="tombolPopup" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->TombolPopup ?>" id="tombolPopup" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Home 1</td>
-                    <td><input type="text" id="home1" name="home1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Home1 ?>" id="home1" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Home 2</td>
-                    <td><input type="text" id="home2" name="home2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Home2 ?>" id="home2" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Event 1</td>
-                    <td><input type="text" id="event1" name="event1" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Event1 ?>" id="event1" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Event 2</td>
-                    <td><input type="text" id="event2" name="event2" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Event2 ?>" id="event2" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Dan</td>
-                    <td><input type="text" id="dan" name="dan" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Dan ?>" id="dan" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Kata Pembuka</td>
-                    <td><input type="text" id="kataPembuka" name="kataPembuka" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->KataPembuka ?>" id="kataPembuka" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tagline</td>
-                    <td><input type="text" id="tagline" name="tagline" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->TagLine ?>" id="tagline" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Ucapan Selamat</td>
-                    <td><input type="text" id="ucapanSelamat" name="ucapanSelamat" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->UcapanSelamat ?>" id="ucapanSelamat" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Nama</td>
-                    <td><input type="text" id="nama" name="nama" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Nama ?>" id="nama" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Isi Nama</td>
-                    <td><input type="text" id="isiNama" name="isiNama" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->IsiNama ?>" id="isiNama" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Ucapan</td>
-                    <td><input type="text" id="ucapan" name="ucapan" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->Ucapan ?>" id="ucapan" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Isi Pesan</td>
-                    <td><input type="text" id="isiPesan" name="isiPesan" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->IsiPesan ?>" id="isiPesan" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tombol kirim pesan</td>
-                    <td><input type="text" id="tombolKirimPesan" name="tombolKirimPesan" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->TombolKirim ?>" id="tombolKirimPesan" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Menu quote</td>
-                    <td><input type="text" id="menuQuote" name="menuQuote" class="form-control"></td>
+                    <td><input type="text" value="<?= $Bahasa->MenuQuote ?>" id="menuQuote" name="bahasa[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -86,71 +86,71 @@
         <tbody>
             <tr>
                 <td>Popup 1</td>
-                <td></td>
+                <td><?= $Bahasa->Popup1 ?></td>
             </tr>
             <tr>
                 <td>Popup 2</td>
-                <td></td>
+                <td><?= $Bahasa->Popup2 ?></td>
             </tr>
             <tr>
                 <td>Tombol pop up </td>
-                <td></td>
+                <td><?= $Bahasa->TombolPopup ?></td>
             </tr>
             <tr>
                 <td>Home 1</td>
-                <td></td>
+                <td><?= $Bahasa->Home1 ?></td>
             </tr>
             <tr>
                 <td>Home 2</td>
-                <td></td>
+                <td><?= $Bahasa->Home2 ?></td>
             </tr>
             <tr>
                 <td>Event 1</td>
-                <td></td>
+                <td><?= $Bahasa->Event1 ?></td>
             </tr>
             <tr>
                 <td>Event 2</td>
-                <td></td>
+                <td><?= $Bahasa->Event2 ?></td>
             </tr>
             <tr>
                 <td>Dan</td>
-                <td></td>
+                <td><?= $Bahasa->Dan ?></td>
             </tr>
             <tr>
                 <td>Kata Pembuka</td>
-                <td></td>
+                <td><?= $Bahasa->KataPembuka ?></td>
             </tr>
             <tr>
                 <td>Tagline</td>
-                <td></td>
+                <td><?= $Bahasa->TagLine ?></td>
             </tr>
             <tr>
                 <td>Ucapan Selamat</td>
-                <td></td>
+                <td><?= $Bahasa->UcapanSelamat ?></td>
             </tr>
             <tr>
                 <td>Nama</td>
-                <td></td>
+                <td><?= $Bahasa->Nama ?></td>
             </tr>
             <tr>
                 <td>Isi Nama</td>
-                <td></td>
+                <td><?= $Bahasa->IsiNama ?></td>
             </tr>
             <tr>
                 <td>Ucapan</td>
-                <td></td>
+                <td><?= $Bahasa->Ucapan ?></td>
             </tr>
             <tr>
                 <td>Isi Pesan</td>
-                <td></td>
+                <td><?= $Bahasa->IsiPesan ?></td>
             </tr>
             <tr>
                 <td>Tombol kirim pesan</td>
-                <td></td>
+                <td><?= $Bahasa->TombolKirim ?></td>
             </tr>
             <tr>
                 <td>Menu quote</td>
-                <td></td>
+                <td><?= $Bahasa->MenuQuote ?></td>
             </tr>
         </tbody>
     </table>

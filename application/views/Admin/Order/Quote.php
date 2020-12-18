@@ -6,7 +6,7 @@
             <tbody>
                 <tr>
                     <td>Judul Quote</td>
-                    <td><input type="text" id="jQuote" name="jQuote" class="form-control"></td>
+                    <td><input type="text" value="<?= $Quote->Judul ?>" id="jQuote" name="quote[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -22,7 +22,7 @@
         <tbody>
             <tr>
                 <td>Judul Quote</td>
-                <td>Story</td>
+                <td><?= $Quote->Judul ?></td>
             </tr>
         </tbody>
     </table>
@@ -36,15 +36,15 @@
             <tbody>
                 <tr>
                     <td>Kecil</td>
-                    <td><input type="text" id="kecil" name="kecil" class="form-control"></td>
+                    <td><input type="text" value="<?= $Story->Kecil ?>" id="kecil" name="story[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Keterangan Story</td>
-                    <td><input type="text" id="keteranganStory" name="keteranganStory" class="form-control"></td>
+                    <td><input type="text" value="<?= $Story->Keterangan ?>" id="keteranganStory" name="story[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Story</td>
-                    <td><input type="text" id="story" name="story" class="form-control"></td>
+                    <td><input type="text" value="<?= $Story->Story ?>" id="story" name="story[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -60,15 +60,15 @@
         <tbody>
             <tr>
                 <td>Kecil</td>
-                <td></td>
+                <td><?= $Story->Kecil ?></td>
             </tr>
             <tr>
                 <td>Keterangan Story</td>
-                <td></td>
+                <td><?= $Story->Keterangan ?></td>
             </tr>
             <tr>
                 <td>Story</td>
-                <td></td>
+                <td><?= $Story->Story ?></td>
             </tr>
         </tbody>
     </table>
