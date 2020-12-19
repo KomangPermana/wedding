@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Event</h3></div>
 <div class="col-md-6"><button id="bEditEvent" class="bEditEvent btn btn-primary pull-right" onclick="editForm('Event');">Edit Event</button></div>
 <div id="fEditEvent" class="fEditEvent col-md-12" style="display:none;">
-    <form action="<?= base_url('Admin/Order/insertEvent/'.$this->uri->segment('4')) ?>" method="">
+    <form action="<?= base_url('Admin/Order/insertEvent/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
@@ -154,23 +154,23 @@
             <tbody>
                 <tr>
                     <td>Titel</td>
-                    <td><input type="text" value="<?= $Akad->Title ?>" id="TitelResepsi" name="resepsi[]" class="form-control"></td>
+                    <td><input type="text" value="<?= $Resepsi->Title ?>" id="TitelResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Tanggal</td>
-                    <td><input type="date" value="<?= $Akad->Tanggal ?>" id="tanggalResepsi" name="resepsi[]" class="form-control"></td>
+                    <td><input type="date" value="<?= $Resepsi->Tanggal ?>" id="tanggalResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Jam</td>
-                    <td><input type="time" value="<?= $Akad->Jam ?>" id="jamResepsi" name="resepsi[]" class="form-control"></td>
+                    <td><input type="time" value="<?= $Resepsi->Jam ?>" id="jamResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Keterangan Waktu</td>
-                    <td><input type="text" value="<?= $Akad->KeteranganWaktu ?>" id="keteranganWaktuResepsi" name="resepsi[]" class="form-control"></td>
+                    <td><input type="text" value="<?= $Resepsi->KeteranganWaktu ?>" id="keteranganWaktuResepsi" name="resepsi[]" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Alamat</td>
-                    <td><textarea class="form-control" name="resepsi[]" id="alamatResepsi"><?= $Akad->Alamat ?></textarea></td>
+                    <td><textarea class="form-control" name="resepsi[]" id="alamatResepsi"><?= $Resepsi->Alamat ?></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -186,23 +186,23 @@
         <tbody>
             <tr>
                 <td>Titel</td>
-                <td><?= $Akad->Title ?></td>
+                <td><?= $Resepsi->Title ?></td>
             </tr>
             <tr>
                 <td>Tanggal</td>
-                <td><?= $Akad->Tanggal ?></td>
+                <td><?= $Resepsi->Tanggal ?></td>
             </tr>
             <tr>
                 <td>Jam</td>
-                <td><?= $Akad->Jam ?></td>
+                <td><?= $Resepsi->Jam ?></td>
             </tr>
             <tr>
                 <td>Keterangan Waktu</td>
-                <td><?= $Akad->KeteranganWaktu ?></td>
+                <td><?= $Resepsi->KeteranganWaktu ?></td>
             </tr>
             <tr>
                 <td>Alamat</td>
-                <td><?= $Akad->Alamat ?></td>
+                <td><?= $Resepsi->Alamat ?></td>
             </tr>
         </tbody>
     </table>
