@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Couple</h3></div>
 <div class="col-md-6"><button id="bEditCouple" class="bEditCouple btn btn-primary pull-right" onclick="editForm('Couple');">Edit Couple</button></div>
 <div id="fEditCouple" class="fEditCouple col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertCouple/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>

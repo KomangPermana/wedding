@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Bahasa</h3></div>
 <div class="col-md-6"><button id="bEditBahasa" class="bEditBahasa btn btn-primary pull-right" onclick="editForm('Bahasa');">Edit Bahasa</button></div>
 <div id="fEditBahasa" class="fEditBahasa col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertBahasa/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>

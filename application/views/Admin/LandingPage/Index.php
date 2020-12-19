@@ -5,27 +5,27 @@
         <div class="card card-stats card-primary">
             <div class="card-body ">
                 <div class="row">
-                    <div class="col-5 d-flex align-items-center">
-                        <div class="numbers">
-                            <p class="card-category">Kode Promo</p>
-                            <h4 id="tPromo" class="card-title">NKH120978KM</h4>
-                            <h4 id="uPromo" style="display:none;" class="card-title">
-                                <input type="text" name="promo" class="form-control" value="NKH120978KM">
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="icon-big text-center">
-                            <div id="bDefault">
-                                <button type="button" id="EditPromo" class="btn btn-success" onclick="ubahPromo('Edit');"><i class="la la-pencil-square"></i> Ubah</button>
-                                <button type="button" id="NonactivePromo" class="btn btn-danger"><i class="la la-eye-slash"></i> Nonaktif</button>
-                            </div>
-                            <div id="bEdit" style="display:none;">
-                                <button type="button" id="SavePromo" class="btn btn-success"><i class="la la-check-square"></i> Simpan</button>
-                                <button type="button" id="BatalPromo" class="btn btn-danger" onclick="ubahPromo('Batal');"><i class="la la-times"></i> Batal</button>
+                        <div class="col-5 d-flex align-items-center">
+                            <div class="numbers">
+                                <p class="card-category">Kode Promo</p>
+                                <h4 id="tPromo" class="card-title">NKH120978KM</h4>
+                                <h4 id="uPromo" style="display:none;" class="card-title">
+                                    <input type="text" name="promo" class="form-control" value="NKH120978KM">
+                                </h4>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-7">
+                            <div class="icon-big text-center">
+                                <div id="bDefault">
+                                    <button type="button" id="EditPromo" class="btn btn-success" onclick="ubahPromo('Edit');"><i class="la la-pencil-square"></i> Ubah</button>
+                                    <button type="button" id="NonactivePromo" class="btn btn-danger"><i class="la la-eye-slash"></i> Nonaktif</button>
+                                </div>
+                                <div id="bEdit" style="display:none;">
+                                    <button type="submit" id="SavePromo" class="btn btn-success"><i class="la la-check-square"></i> Simpan</button>
+                                    <button type="button" id="BatalPromo" class="btn btn-danger" onclick="ubahPromo('Batal');"><i class="la la-times"></i> Batal</button>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

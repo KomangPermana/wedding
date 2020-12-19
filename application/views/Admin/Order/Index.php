@@ -46,7 +46,7 @@
                             <tbody>
                                 <tr>
                                     <td>Link</td>
-                                    <td>https://nikahankami.com/id/abdinahayurin/nama+tamu maaf</td>
+                                    <td><?= base_url().$Pasangan->Nama?></td>
                                     <td></td>
                                 </tr>
                                 <tr>

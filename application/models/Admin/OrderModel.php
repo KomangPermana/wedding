@@ -38,30 +38,34 @@ class OrderModel extends CI_Model
     function insertAgama(){
         $id = $this->uri->segment('4');
         $dataInput = $this->input->post('agama');
-
-        $DataAgama = getDataByIdPengantin('data_agama',$id);
-        if (empty($DataAgama)){
-            $Data = array(
-                'IdPengantin'   => $id,
-                'Couple1'       => $dataInput[0],
-                'Couple2'       => $dataInput[1],
-                'Couple3'       => $dataInput[2],
-                'Quote1'        => $dataInput[3],
-                'Quote2'        => $dataInput[4],
-                'DateCreated'   => datetime('datetime')
-            );
-            $this->db->insert('data_agama',$Data);
+        $length = strlen($dataInput[0]);
+        if ($length > 5){
+            $this->session->set_flashdata('failed', 'Gagal Menyimpan Data Agama');
         } else {
-            $Data = array(
-                'Couple1'       => $dataInput[0],
-                'Couple2'       => $dataInput[1],
-                'Couple3'       => $dataInput[2],
-                'Quote1'        => $dataInput[3],
-                'Quote2'        => $dataInput[4],
-                'LastUpdate'    => datetime('datetime')
-            );
-            $this->db->where('IdPengantin', $id);
-            $this->db->update('data_agama', $Data);
+            $DataAgama = getDataByIdPengantin('data_agama',$id);
+            if (empty($DataAgama)){
+                $Data = array(
+                    'IdPengantin'   => $id,
+                    'Couple1'       => $dataInput[0],
+                    'Couple2'       => $dataInput[1],
+                    'Couple3'       => $dataInput[2],
+                    'Quote1'        => $dataInput[3],
+                    'Quote2'        => $dataInput[4],
+                    'DateCreated'   => datetime('datetime')
+                );
+                $db = $this->db->insert('data_agama',$Data);
+            } else {
+                $Data = array(
+                    'Couple1'       => $dataInput[0],
+                    'Couple2'       => $dataInput[1],
+                    'Couple3'       => $dataInput[2],
+                    'Quote1'        => $dataInput[3],
+                    'Quote2'        => $dataInput[4],
+                    'LastUpdate'    => datetime('datetime')
+                );
+                $db = $this->db->where('IdPengantin', $id)->update('data_agama', $Data);
+            }
+            $this->session->set_flashdata('success', 'Berhasil Menyimpan Data Agama');
         }
     }
     //////// End Agama ////////////////////////

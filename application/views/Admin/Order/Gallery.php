@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Galeri</h3></div>
 <div class="col-md-6"><button id="bEditGaleri" class="bEditGaleri btn btn-primary pull-right" onclick="editForm('Galeri');">Edit Galeri</button></div>
 <div id="fEditGaleri" class="fEditGaleri col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertGallery/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>

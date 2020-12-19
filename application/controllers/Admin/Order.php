@@ -46,4 +46,54 @@ class Order extends CI_Controller
 		$this->OrderModel->insertAgama();
 		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
 	}
+
+	function insertHome(){
+		$this->OrderModel->insertHome();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertCouple(){
+		$this->OrderModel->insertCouple();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertEvent(){
+		$this->OrderModel->insertEvent();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertAkad(){
+		$this->OrderModel->insertAkad();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertResepsi(){
+		$this->OrderModel->insertResepsi();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertMap(){
+		$this->OrderModel->insertMap();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertGallery(){
+		$this->OrderModel->insertGallery();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertQuote(){
+		$this->OrderModel->insertQuote();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertStory(){
+		$this->OrderModel->insertStory();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
+
+	function insertBahasa(){
+		$this->OrderModel->insertBahasa();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+	}
 }

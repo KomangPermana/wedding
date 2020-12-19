@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Quote</h3></div>
 <div class="col-md-6"><button id="bEditQuote" class="bEditQuote btn btn-primary pull-right" onclick="editForm('Quote');">Edit Quote</button></div>
 <div id="fEditQuote" class="fEditQuote col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertQuote/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
@@ -31,7 +31,7 @@
 <div class="col-md-6"><h3>Story Pasangan</h3></div>
 <div class="col-md-6"><button id="bEditStory" class="bEditStory btn btn-primary pull-right" onclick="editForm('Story');">Edit Story</button></div>
 <div id="fEditStory" class="fEditStory col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertStory/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>

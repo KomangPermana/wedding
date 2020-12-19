@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Home</h3></div>
 <div class="col-md-6"><button id="bEditHome" class="bEditHome btn btn-primary pull-right" onclick="editForm('Home');">Edit Home</button></div>
 <div id="fEditHome" class="fEditHome col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertHome/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>

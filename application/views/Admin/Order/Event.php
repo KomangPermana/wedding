@@ -1,7 +1,7 @@
 <div class="col-md-6"><h3>Event</h3></div>
 <div class="col-md-6"><button id="bEditEvent" class="bEditEvent btn btn-primary pull-right" onclick="editForm('Event');">Edit Event</button></div>
 <div id="fEditEvent" class="fEditEvent col-md-12" style="display:none;">
-    <form action="" method="">
+    <form action="<?= base_url('Admin/Order/insertEvent/'.$this->uri->segment('4')) ?>" method="">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
@@ -87,7 +87,7 @@
 <div class="col-md-6"><h3>Tanggal dan alamat Akad</h3></div>
 <div class="col-md-6"><button id="bEditAkad" class="bEditAkad btn btn-primary pull-right" onclick="editForm('Akad');">Edit Akad</button></div>
 <div id="fEditAkad" class="fEditAkad col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertAkad/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
@@ -149,7 +149,7 @@
 <div class="col-md-6"><h3>Tanggal dan alamat Resepsi</h3></div>
 <div class="col-md-6"><button id="bEditResepsi" class="bEditResepsi btn btn-primary pull-right" onclick="editForm('Resepsi');">Edit Resepsi</button></div>
 <div id="fEditResepsi" class="fEditResepsi col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertResepsi/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
@@ -211,7 +211,7 @@
 <div class="col-md-6"><h3>Map</h3></div>
 <div class="col-md-6"><button id="bEditMap" class="bEditMap btn btn-primary pull-right" onclick="editForm('Map');">Edit Map</button></div>
 <div id="fEditMap" class="fEditMap col-md-12" style="display:none;">
-    <form action="" method="POST">
+    <form action="<?= base_url('Admin/Order/insertMap/'.$this->uri->segment('4')) ?>" method="POST">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>

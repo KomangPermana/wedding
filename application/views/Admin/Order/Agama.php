@@ -44,28 +44,46 @@
     </form>
 </div>
 <div id="fBatalAgama" class="fBatalAgama col-md-12">
-<table class="table table-striped table-hover">
-    <tbody>
-        <tr>
-            <td>Agama Couple 1</td>
-            <td><?= $Agama->Couple1 ?></td>
-        </tr>
-        <tr>
-            <td>Agama Couple 2</td>
-            <td><?= $Agama->Couple2 ?></td>
-        </tr>
-        <tr>
-            <td>Agama Couple 3</td>
-            <td><?= $Agama->Couple3 ?></td>
-        </tr>
-        <tr>
-            <td>Agama quote 1</td>
-            <td><?= $Agama->Quote1 ?></td>
-        </tr>
-        <tr>
-            <td>Agama quote 2</td>
-            <td><?= $Agama->Quote2 ?></td>
-        </tr>
-    </tbody>
-</table>
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <td>Agama Couple 1</td>
+                <td><?= $Agama->Couple1 ?></td>
+            </tr>
+            <tr>
+                <td>Agama Couple 2</td>
+                <td><?= $Agama->Couple2 ?></td>
+            </tr>
+            <tr>
+                <td>Agama Couple 3</td>
+                <td><?= $Agama->Couple3 ?></td>
+            </tr>
+            <tr>
+                <td>Agama quote 1</td>
+                <td><?= $Agama->Quote1 ?></td>
+            </tr>
+            <tr>
+                <td>Agama quote 2</td>
+                <td><?= $Agama->Quote2 ?></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+
+<script>
+function cekInput(){
+    // var code = $("#code"+id).val();
+    // var dataString = 'code='+ code;
+    // $.ajax({
+    //     type: "POST",
+    //     url: "<?php //echo base_url('AdminGrosir/Transaction/getNameByCode'); ?>",
+    //     data: dataString,
+    //     cache: false,
+    //     success: function(response){
+    //         var _dt = JSON.parse(response);
+    //         console.log(_dt);
+    //         document.getElementById('name'+id).value = _dt['Name'];
+    //     }
+    // });
+}
+</script>
