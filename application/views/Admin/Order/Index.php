@@ -3,43 +3,44 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
+                <?php $tabActive = $this->uri->segment('5'); ?>
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#Agama">Agama</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Couple">Couple</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Event">Event</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Galeri">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Quote">Quote</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Bahasa">Bahasa</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Setting">Setting</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Ucapan">Ucapan</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#Note">Note</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Agama' || $tabActive == ''){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Agama">Agama</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Home'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Couple'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Couple">Couple</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Event'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Event">Event</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Galeri'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Quote'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Quote">Quote</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Bahasa'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Bahasa">Bahasa</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Setting'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Setting">Setting</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Ucapan'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Ucapan">Ucapan</a></li>
+                    <li class="nav-item"><a class="nav-link <?php if($tabActive == 'Note'){echo 'active';} ?>" role="tab" data-toggle="tab" href="#Note">Note</a></li>
                 </ul>
             </div>
             <div class="card-body">
                 <div class="tab-content">
-                    <div id="Agama" role="tabpanel" class="tab-pane fade in active">
+                    <div id="Agama" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Agama' || $tabActive == ''){echo 'active';} ?>">
                         <?php include "Agama.php"; ?>
                     </div>
-                    <div id="Home" role="tabpanel" class="tab-pane fade">
+                    <div id="Home" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Home'){echo 'active';} ?>">
                         <?php include "Home.php"; ?>
                     </div>
-                    <div id="Couple" role="tabpanel" class="tab-pane fade">
+                    <div id="Couple" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Couple'){echo 'active';} ?>">
                         <?php include "Couple.php"; ?>
                     </div>
-                    <div id="Event" role="tabpanel" class="tab-pane fade">
+                    <div id="Event" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Event'){echo 'active';} ?>">
                         <?php include "Event.php"; ?>
                     </div>
-                    <div id="Galeri" role="tabpanel" class="tab-pane fade">
+                    <div id="Galeri" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Galeri'){echo 'active';} ?>">
                         <?php include "Gallery.php"; ?>
                     </div>
-                    <div id="Quote" role="tabpanel" class="tab-pane fade">
+                    <div id="Quote" role="tabpanel" class="tab-pane fade in" <?php if($tabActive == 'Quote'){echo 'active';} ?>>
                         <?php include "Quote.php"; ?>
                     </div>
-                    <div id="Bahasa" role="tabpanel" class="tab-pane fade">
+                    <div id="Bahasa" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Bahasa'){echo 'active';} ?>">
                         <?php include "Bahasa.php"; ?>
                     </div>
-                    <div id="Setting" role="tabpanel" class="tab-pane fade">
+                    <div id="Setting" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Setting'){echo 'active';} ?>">
                         <div class="col-md-12"><h3>Setting</h3></div>
                         <div class="col-md-12">
                         <table class="table table-striped table-hover">
@@ -192,12 +193,12 @@
                         <div class="col-md-12">&nbsp;</div>
                         <div class="col-md-12"><button class="btn btn-primary">Ubah Settingan</button></div>
                     </div>
-                    <div id="Ucapan" role="tabpanel" class="tab-pane fade">
+                    <div id="Ucapan" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Ucapan'){echo 'active';} ?>">
                         <div class="col-md-12"><h3>Ucapan</h3></div>
                         <div class="col-md-12">&nbsp;</div>
                         <div class="col-md-12"><button class="btn btn-primary">Buat Password RSTV</button></div>
                     </div>
-                    <div id="Note" role="tabpanel" class="tab-pane fade">
+                    <div id="Note" role="tabpanel" class="tab-pane fade in <?php if($tabActive == 'Note'){echo 'active';} ?>">
                         <div class="col-md-12"><h3>Note</h3></div>
                         <div class="col-md-12">&nbsp;</div>
                         <div class="col-md-12">

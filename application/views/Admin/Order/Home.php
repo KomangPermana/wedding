@@ -1,25 +1,37 @@
 <div class="col-md-6"><h3>Home</h3></div>
 <div class="col-md-6"><button id="bEditHome" class="bEditHome btn btn-primary pull-right" onclick="editForm('Home');">Edit Home</button></div>
 <div id="fEditHome" class="fEditHome col-md-12" style="display:none;">
-    <form action="<?= base_url('Admin/Order/insertHome/'.$this->uri->segment('4')) ?>" method="POST">
+    <form action="<?= base_url('Admin/Order/insertHome/'.$this->uri->segment('4')) ?>" method="POST" enctype="multipart/form-data">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
                     <td>Foto Ogthumbnail</td>
                     <td>
-                        <input type="file" value="<?= $Home->Foto_Ogthumbnail ?>" id="fOgthumbnail" name="home[]" class="form-control">
+                        <?php if($Home->Foto_Ogthumbnail){ ?>
+                            <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Home->Foto_Ogthumbnail ?>">
+                        <?php } ?>
+                        <input type="file" id="fOgthumbnail" name="fOgthumbnail" class="form-control">
+                        <input type="hidden" value="<?= $Home->Foto_Ogthumbnail ?>" id="fOgthumbnail" name="home[]">
                     </td>
                 </tr>
                 <tr>
                     <td>Foto Favicon</td>
                     <td>
-                        <input type="file" value="<?= $Home->Foto_Favicon ?>" id="fFavicon" name="home[]" class="form-control">
+                        <?php if($Home->Foto_Favicon){ ?>
+                            <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Home->Foto_Favicon ?>">
+                        <?php } ?>
+                        <input type="file" id="fFavicon" name="fFavicon" class="form-control">
+                        <input type="hidden" value="<?= $Home->Foto_Favicon ?>" id="fFavicon" name="home[]">
                     </td>
                 </tr>
                 <tr>
                     <td>Foto Openerimg</td>
                     <td>
-                        <input type="file" value="<?= $Home->Foto_Openerimg ?>" id="fOpenerimg" name="home[]" class="form-control">
+                        <?php if($Home->Foto_Openerimg){ ?>
+                            <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Home->Foto_Openerimg ?>">
+                        <?php } ?>
+                        <input type="file" id="fOpenerimg" name="fOpenerimg" class="form-control">
+                        <input type="hidden" value="<?= $Home->Foto_Openerimg ?>" id="fOpenerimg" name="home[]">
                     </td>
                 </tr>
                 <tr>
@@ -78,15 +90,27 @@
     <tbody>
         <tr>
             <td>Foto Ogthumbnail</td>
-            <td><?= $Home->Foto_Ogthumbnail ?></td>
+            <td>
+            <?php if($Home->Foto_Ogthumbnail){ ?>
+                <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Home->Foto_Ogthumbnail ?>">
+            <?php } ?>
+            </td>
         </tr>
         <tr>
             <td>Foto Favicon</td>
-            <td><?= $Home->Foto_Favicon ?></td>
+            <td>
+            <?php if($Home->Foto_Favicon){ ?>
+                <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Home->Foto_Favicon ?>">
+            <?php } ?>
+            </td>
         </tr>
         <tr>
             <td>Foto Openerimg</td>
-            <td><?= $Home->Foto_Openerimg ?></td>
+            <td>
+            <?php if($Home->Foto_Openerimg){ ?>
+                <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Home->Foto_Openerimg ?>">
+            <?php } ?>
+            </td>
         </tr>
         <tr>
             <td>Judul home</td>

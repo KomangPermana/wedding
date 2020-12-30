@@ -10,7 +10,7 @@ class Order extends CI_Controller
     }
 
     function index(){
-		$vars['Data']    	= $this->OrderModel->getMaster();
+		$vars['Data']    	= $this->OrderModel->getDataMaster();
         $vars['getView']    = "Order";
 		$vars['Title']		= "Data Pemesanan";
 		$vars['View']		= "Admin/Order/Pesan";
@@ -19,6 +19,21 @@ class Order extends CI_Controller
 
 	function insertLink(){
 		$this->OrderModel->insertData();
+		redirect(base_url('Admin/Order/'));
+	}
+
+	function updateLink(){
+		$this->OrderModel->updateData();
+		redirect(base_url('Admin/Order/'));
+	}
+
+	function NonactiveLink(){
+		$this->OrderModel->nonactiveLink();
+		redirect(base_url('Admin/Order/'));
+	}
+
+	function Duplicate(){
+		$this->OrderModel->duplicateMaster();
 		redirect(base_url('Admin/Order/'));
 	}
 	
@@ -33,6 +48,7 @@ class Order extends CI_Controller
 		$vars['Resepsi']		= $this->OrderModel->getResepsi($id);
 		$vars['Map']    		= $this->OrderModel->getMap($id);
 		$vars['Gallery']    	= $this->OrderModel->getGallery($id);
+		$vars['FotoGallery']    = $this->OrderModel->getFotoGallery($id);
 		$vars['Quote']	    	= $this->OrderModel->getQuote($id);
 		$vars['Story']	    	= $this->OrderModel->getStory($id);
 		$vars['Bahasa'] 	   	= $this->OrderModel->getBahasa($id);
@@ -44,56 +60,61 @@ class Order extends CI_Controller
 	
 	function insertAgama(){
 		$this->OrderModel->insertAgama();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Agama'));
 	}
 
 	function insertHome(){
 		$this->OrderModel->insertHome();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Home'));
 	}
 
 	function insertCouple(){
 		$this->OrderModel->insertCouple();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Couple'));
 	}
 
 	function insertEvent(){
 		$this->OrderModel->insertEvent();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Event'));
 	}
 
 	function insertAkad(){
 		$this->OrderModel->insertAkad();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Event'));
 	}
 
 	function insertResepsi(){
 		$this->OrderModel->insertResepsi();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Event'));
 	}
 
 	function insertMap(){
 		$this->OrderModel->insertMap();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Event'));
 	}
 
 	function insertGallery(){
 		$this->OrderModel->insertGallery();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Galeri'));
+	}
+
+	function insertFotoGallery(){
+		$this->OrderModel->insertFotoGallery();
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Galeri'));
 	}
 
 	function insertQuote(){
 		$this->OrderModel->insertQuote();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Quote'));
 	}
 
 	function insertStory(){
 		$this->OrderModel->insertStory();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Quote'));
 	}
 
 	function insertBahasa(){
 		$this->OrderModel->insertBahasa();
-		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4')));
+		redirect(base_url('Admin/Order/Edit/'.$this->uri->segment('4').'/Bahasa'));
 	}
 }

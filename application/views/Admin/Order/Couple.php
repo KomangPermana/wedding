@@ -1,12 +1,18 @@
 <div class="col-md-6"><h3>Couple</h3></div>
 <div class="col-md-6"><button id="bEditCouple" class="bEditCouple btn btn-primary pull-right" onclick="editForm('Couple');">Edit Couple</button></div>
 <div id="fEditCouple" class="fEditCouple col-md-12" style="display:none;">
-    <form action="<?= base_url('Admin/Order/insertCouple/'.$this->uri->segment('4')) ?>" method="POST">
+    <form action="<?= base_url('Admin/Order/insertCouple/'.$this->uri->segment('4')) ?>" method="POST" enctype="multipart/form-data">
         <table class="table table-striped table-hover">
             <tbody>
                 <tr>
                     <td>Foto mempelai 1</td>
-                    <td><input type="file" value="<?= $Couple->Foto1 ?>" id="fmempelai1" name="couple[]" class="form-control"></td>
+                    <td>
+                        <?php if($Couple->Foto1){ ?>
+                            <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Couple->Foto1 ?>">
+                        <?php } ?>
+                        <input type="file" value="<?= $Couple->Foto1 ?>" id="fmempelai1" name="fmempelai1" class="form-control">
+                        <input type="hidden" value="<?= $Couple->Foto1 ?>" id="fmempelai1" name="couple[]">
+                    </td>
                 </tr>
                 <tr>
                     <td>Nama mempelai 1</td>
@@ -26,7 +32,13 @@
                 </tr>
                 <tr>
                     <td>Foto mempelai 2</td>
-                    <td><input type="file" value="<?= $Couple->Foto2 ?>" id="fmempelai2" name="couple[]" class="form-control"></td>
+                    <td>
+                        <?php if($Couple->Foto2){ ?>
+                            <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Couple->Foto2 ?>">
+                        <?php } ?>
+                        <input type="file" value="<?= $Couple->Foto2 ?>" id="fmempelai2" name="fmempelai2" class="form-control">
+                        <input type="hidden" value="<?= $Couple->Foto2 ?>" id="fmempelai2" name="couple[]">
+                    </td>
                 </tr>
                 <tr>
                     <td>Nama mempelai 2</td>
@@ -58,7 +70,11 @@
     <tbody>
         <tr>
             <td>Foto mempelai 1</td>
-            <td><?= $Couple->Foto1 ?></td>
+            <td>
+                <?php if($Couple->Foto1){ ?>
+                    <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Couple->Foto1 ?>">
+                <?php } ?>
+            </td>
         </tr>
         <tr>
             <td>Nama mempelai 1</td>
@@ -78,7 +94,11 @@
         </tr>
         <tr>
             <td>Foto mempelai 2</td>
-            <td><?= $Couple->Foto2 ?></td>
+            <td>
+                <?php if($Couple->Foto2){ ?>
+                    <img width="200" src="<?= base_url().'assets/admin/pasangan/'.$this->uri->segment(4).'/'.$Couple->Foto2 ?>">
+                <?php } ?>
+            </td>
         </tr>
         <tr>
             <td>Nama mempelai 2</td>

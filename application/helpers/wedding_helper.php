@@ -20,6 +20,14 @@
         return $day.' '.$month.' '.$year;
     }
 
+    function inputDate($date){
+        $day    = date("d", strtotime($date));
+        $month  = date("m", strtotime($date));
+        $year   = date("Y", strtotime($date));
+    
+        return $year.'-'.$month.'-'.$day;
+    }
+
     function getDataByIdPengantin($table,$id){
         $CI =& get_instance();
 		if ($table == "master_pengantin"){

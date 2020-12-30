@@ -65,5 +65,7 @@ $(document).ready(function() {
             //'copyHtml5','print','excelHtml5','pdfHtml5'
         ]
     } );
+
+    $('#dtLandingPage').DataTable( {} );
 } );
 </script>

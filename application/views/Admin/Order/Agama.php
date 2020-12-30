@@ -69,21 +69,3 @@
         </tbody>
     </table>
 </div>
-
-<script>
-function cekInput(){
-    // var code = $("#code"+id).val();
-    // var dataString = 'code='+ code;
-    // $.ajax({
-    //     type: "POST",
-    //     url: "<?php //echo base_url('AdminGrosir/Transaction/getNameByCode'); ?>",
-    //     data: dataString,
-    //     cache: false,
-    //     success: function(response){
-    //         var _dt = JSON.parse(response);
-    //         console.log(_dt);
-    //         document.getElementById('name'+id).value = _dt['Name'];
-    //     }
-    // });
-}
-</script>

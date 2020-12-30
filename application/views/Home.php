@@ -400,7 +400,7 @@
 								</div>
 								<div class="col-md-12">&nbsp;</div>
 								<div class="col-md-12">
-									<input type="text" class="form-control" placeholder="Pesan" required="" autocomplete="off">
+									<textarea class="form-control" placeholder="Pesan" required="" autocomplete="off"></textarea>
 								</div>
 								<div class="col-md-12">&nbsp;</div>
 								<div class="col-md-12" align="right">

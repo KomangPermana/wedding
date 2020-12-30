@@ -11,6 +11,8 @@ class LandingPage extends CI_Controller {
     
 	function index(){
 		$vars['Promo']		= $this->LandingPageModel->getPromo();
+		$vars['Phone']		= $this->LandingPageModel->getPhone();
+		$vars['Email']		= $this->LandingPageModel->getEmail();
         $vars['getView']    = "LandingPage";
 		$vars['Title']		= "Landing Page Fitur";
 		$vars['View']		= "Admin/LandingPage/Index";
@@ -22,8 +24,28 @@ class LandingPage extends CI_Controller {
 		print_r(json_encode($result));
 	}
 
-	function insertPromo(){
-		$this->LandingPageModel->insertPromo();
-		$this->getPromo();
+	function getPhone(){
+		$result = $this->LandingPageModel->getPhone();
+		print_r(json_encode($result));
+	}
+
+	function getEmail(){
+		$result = $this->LandingPageModel->getEmail();
+		print_r(json_encode($result));
+	}
+
+	function insertData(){
+		$data   = $this->input->post('data');
+        $type   = $this->input->post('type');
+        $table  = $this->input->post('table');
+		$this->LandingPageModel->insertData($data,$type,$table);
+
+		if ($table == "Promo"){
+			$this->getPromo();
+		}else if ($table == "Phone"){
+			$this->getPhone();
+		} else if ($table == "Email"){
+			$this->getEmail();
+		}
 	}
 }
