@@ -37,3 +37,9 @@
         }
         return $CI->db->get_where($table,$data)->row();
     }
+
+    function getDataByNamePengantin($table,$nama){
+        $CI =& get_instance();
+        $data = array('Nama' => $nama);    
+        return $CI->db->get_where($table,$data)->row();
+    }

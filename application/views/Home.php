@@ -58,7 +58,7 @@
 					<div class="container h-100">
 						<div class="row h-100 align-items-center">
 							<div class="col-12">
-								<h2 data-duration-in=".3" data-animation-in="fadeInUp">Undangan Nikah Digital</h2>
+								<h2 data-duration-in=".3" data-animation-in="fadeInUp">UNDANGAN DIGITAL</h2>
 								<p class="mb-4" data-duration-in=".4" data-animation-in="fadeInUp" data-delay-in=".4">Premium Termurah</p>
 								<a href="#0" class="btn btn-primary solid" data-duration-in=".5" data-animation-in="fadeInUp" data-delay-in=".5"><i class="fa fa-whatsapp"></i> Pesan Sekarang</a>
 							</div>

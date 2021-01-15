@@ -76,8 +76,6 @@
                         <select name="category" class="form-control">
                             <option value="">Pilih...</option>
                             <option value="1">Desain 1</option>
-                            <option value="2">Desain 2</option>
-                            <option value="3">Desain 3</option>
                         </select>
                     </div>
                 </div>
